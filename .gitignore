@@ -1,0 +1,163 @@
+
+# ==================================================
+# FLASHCARD SP-KN - GITIGNORE GENERAL
+# ==================================================
+
+
+# ==================================================
+# 1. CREDENCIALES Y CONFIGURACIONES PRIVADAS
+# ==================================================
+
+.env
+.env.*
+!.env.example
+!.env.*.example
+
+secrets/
+*.pem
+*.key
+*.p12
+*.pfx
+
+
+# ==================================================
+# 2. FLUTTER Y DART
+# ==================================================
+
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+.packages
+build/
+coverage/
+.widget_preview/
+
+*.iml
+*.ipr
+*.iws
+
+
+# ==================================================
+# 3. ANDROID Y GRADLE
+# ==================================================
+
+.gradle/
+.kotlin/
+
+local.properties
+**/local.properties
+
+**/.gradle/
+**/.kotlin/
+
+**/android/build/
+**/android/app/debug/
+**/android/app/profile/
+**/android/app/release/
+
+# Conservar Gradle Wrapper
+!gradle-wrapper.jar
+
+
+# ==================================================
+# 4. PYTHON
+# ==================================================
+
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+
+.venv/
+venv/
+env/
+
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+
+# ==================================================
+# 5. PYINSTALLER Y PANEL WINDOWS
+# ==================================================
+
+**/build/
+**/dist/
+
+*.spec.bak
+
+
+# ==================================================
+# 6. SERVIDOR - RESPALDOS PRIVADOS
+# ==================================================
+
+flashcard-update-server/backups/*
+
+!flashcard-update-server/backups/.gitkeep
+
+
+# ==================================================
+# 7. SERVIDOR - PUBLICACIONES
+# ==================================================
+
+flashcard-update-server/releases/*
+
+!flashcard-update-server/releases/.gitkeep
+!flashcard-update-server/releases/manifest.example.json
+
+
+# ==================================================
+# 8. ARCHIVOS COMPILADOS Y BINARIOS
+# ==================================================
+
+*.apk
+*.aab
+*.exe
+*.dll
+*.so
+*.dylib
+
+
+# ==================================================
+# 9. DOCKER Y REGISTROS
+# ==================================================
+
+*.log
+*.pid
+*.tmp
+
+
+# ==================================================
+# 10. EDITORES Y SISTEMA OPERATIVO
+# ==================================================
+
+.idea/
+.vscode/
+
+.DS_Store
+Thumbs.db
+desktop.ini
+
+*.bak
+*.swp
+*.swo
+*~
+
+# ==================================================
+# 11. ANDROID - ARCHIVOS LOCALES Y SECRETOS
+# ==================================================
+
+# Archivos generados
+**/captures/
+**/GeneratedPluginRegistrant.java
+**/.cxx/
+
+# Configuración local y credenciales de firma
+**/key.properties
+**/*.keystore
+**/*.jks

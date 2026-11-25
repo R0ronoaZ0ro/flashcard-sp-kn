@@ -1,0 +1,9 @@
+{
+  "version": "1.0.0",
+  "build_number": 1,
+  "release_notes": [
+    "Primera publicación de ejemplo"
+  ],
+  "apk_url": "https://TU-DOMINIO/flashcard-sp-kn.apk",
+  "sha256": "REEMPLAZAR_CON_SHA256_DEL_APK"
+}
